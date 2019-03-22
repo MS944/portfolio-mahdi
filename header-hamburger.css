@@ -1,0 +1,170 @@
+header{
+  position: fixed;
+  top:0;
+  left:0;
+  width:40%;
+  height: 70px;
+  background: #191919;
+  display: block;
+  margin: 0;
+}
+.logo-holder{
+  float: left;
+  max-width: 200px;
+  height: 70px;
+  position: relative;
+  padding: 0 30px;
+ }
+
+.hamberger-icon{
+  height: 65px;
+  width: 55px;
+  /* display: flex; */
+  float:right;
+  margin: 3px 0 0 0;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  border-left:1px solid rgb(208, 241, 15)
+}
+.hamburger-menu{
+  position: absolute;
+}
+
+.horizen-line {
+  width: 35px;
+  height: 5px;
+  margin: 10px;
+  background: yellow
+}
+
+
+.menu-toggle {
+  display: block;
+  position: absolute;
+  /* padding: .5em 0.5em; */
+  line-height: 1em;
+  font-size: 3em;
+  color: rgb(255, 6, 6);
+  padding:5px;
+  z-index: 1000;
+  opacity: 0;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: rgb(190, 49, 49,0.01);
+}
+
+/* .hamberger-full{
+  width:auto;
+} */
+.vertical-menu {
+  position: absolute;
+  display: none;
+  /* display:flex; */
+  /* left: 500px; */
+  top: 0;
+	overflow-x: visible;
+	transition: left 0.3s ease,
+	box-shadow 0.3s ease;
+  z-index: 900;
+  
+}
+.vertical-menu span {
+  font-size: 20px;
+}
+
+.vertical-menu ul {
+  list-style: none;
+  margin: 0;
+  padding:0 3em 3em 0 ;
+    /* Hide shadow w/ -8px while 'closed' */
+  box-shadow: 8px 0 20px rgba(0, 0, 0, 0.082);
+  min-height: inherit;
+  /* width: 100%; */
+  background: black;
+  display: block;
+}
+
+.vertical-menu li{
+  width: 500px;
+  text-align: center;
+  background: black;
+}
+
+.vertical-menu a {
+  display: block;
+  padding: 0 1em;
+  line-height: 2em;
+  font-size: 2em;
+  color:rgb(181, 184, 36);
+  text-decoration: none;
+  border-bottom: 1px solid #1817177c;
+  background: #0000002d;
+}
+
+.vertical-menu li:first-child a {
+  border-top: 5px solid #030303;
+  
+}
+
+.vertical-menu a:hover,
+.vertical-menu a:focus {
+  text-decoration: underline;
+  color:white;
+}
+ .menu-close {
+  /* position: absolute; */
+  right: 0;
+  top: 0;
+}
+
+.vertical-menu:target {
+  display: block;
+  /* left: 500px; */
+  outline: none;
+  box-shadow: 3px 0 12px rgba(0,0,0,.25);
+}
+
+.vertical-menu:target .menu-close, .menu-close {
+  z-index: 1001;
+}
+
+.vertical-menu:target ul{
+  position: relative;
+  z-index: 1000;
+}
+.vertical-menu:target + .backdrop{
+  position: absolute;
+  display: block;  
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: #0000002d;
+  background: #0000002d;
+  cursor: default;
+}
+
+@supports (position: fixed) {
+  .main-menu,
+  .main-menu:target + .backdrop{
+    position: fixed;
+  }
+}
+
+@media screen and (max-width: 592px) {
+
+  .vertical-menu {
+    width: 100%;
+  }
+  .vertical-menu ul {
+    width: auto;
+  }
+  .vertical-menu li {
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,39 @@
+.nav-bar{
+  position: fixed;
+  top:0;
+  left:40%;
+  width:60%;
+  height: 70px;
+  background: #191919;
+  /* float: rigth; */
+  margin:0;
+  display: flex;
+  z-index: 6;
+  
+}
+.nav-bar ul {
+  display: flex;
+  align-items: stretch; 
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.nav-bar li {
+  width:120px;
+  display: block;
+  list-style-type: none;
+  text-align: center;
+  border: 1px solid black;
+  background: yellow;
+}
+.nav-bar li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  margin:20px;
+  font-weight: 600;
+}
+li:hover{
+  transform: scale(1.1);
+}

@@ -1,0 +1,102 @@
+
+@import 'header-hamburger.css';
+@import 'nav-bar.css';
+@import 'home-page.css';
+@import 'page2.css';
+@import 'last-page.css';
+
+
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+.page {
+  height: 100vh;
+  /* display:grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 40% 60%; */
+  
+  display: flex;
+  flex-direction: row
+}
+.image-container{
+  width:40%;
+  margin:0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+/* phone:before {
+  content: "";
+  display: block;
+  background: url(<i class="fas fa-phone"></i>) no-repeat;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 0 6px 0 0;
+} */
+
+
+
+.borderline-container{
+  height: 380px;
+  width: 330px;
+  border-left: 11px solid rgba(255, 255, 255, 0.51);
+  border-bottom: 11px solid rgba(255, 255, 255, 0.51);
+  margin:0 40px 80px 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.left-panel-text{
+  margin: 30px;
+  border-bottom: 5px solid yellow;
+} 
+h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: white;
+  padding: 20px;
+  
+} 
+.content{
+  width: 60%;
+}
+
+
+@media screen and (max-width: 800px) {
+  div.nav-bar { display: none}
+  header {width: 100%}
+  }
+
+@media screen and (max-width: 592px) {
+  h1.greeting-text{
+    font-weight: 500;
+    font-size: 3rem;
+  }
+  .image-container {
+    display: none;
+  }
+
+  
+
+
+
+
+
+}
