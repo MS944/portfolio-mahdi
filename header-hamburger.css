@@ -4,7 +4,7 @@ header{
   left:0;
   width:40%;
   height: 70px;
-  background: #191919;
+  background: #000000;
   display: block;
   margin: 0;
 }
@@ -19,13 +19,11 @@ header{
 .hamberger-icon{
   height: 65px;
   width: 55px;
-  /* display: flex; */
   float:right;
   margin: 3px 0 0 0;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
-  border-left:1px solid rgb(208, 241, 15)
+  border-left:1px solid rgb(209, 241, 0)
 }
 .hamburger-menu{
   position: absolute;
@@ -35,14 +33,14 @@ header{
   width: 35px;
   height: 5px;
   margin: 10px;
-  background: yellow
+  background: yellow;
+  
 }
 
 
 .menu-toggle {
   display: block;
   position: absolute;
-  /* padding: .5em 0.5em; */
   line-height: 1em;
   font-size: 3em;
   color: rgb(255, 6, 6);
@@ -56,14 +54,9 @@ header{
   color: rgb(190, 49, 49,0.01);
 }
 
-/* .hamberger-full{
-  width:auto;
-} */
 .vertical-menu {
   position: absolute;
   display: none;
-  /* display:flex; */
-  /* left: 500px; */
   top: 0;
 	overflow-x: visible;
 	transition: left 0.3s ease,
@@ -79,10 +72,8 @@ header{
   list-style: none;
   margin: 0;
   padding:0 3em 3em 0 ;
-    /* Hide shadow w/ -8px while 'closed' */
   box-shadow: 8px 0 20px rgba(0, 0, 0, 0.082);
   min-height: inherit;
-  /* width: 100%; */
   background: black;
   display: block;
 }
@@ -115,14 +106,12 @@ header{
   color:white;
 }
  .menu-close {
-  /* position: absolute; */
   right: 0;
   top: 0;
 }
 
 .vertical-menu:target {
   display: block;
-  /* left: 500px; */
   outline: none;
   box-shadow: 3px 0 12px rgba(0,0,0,.25);
 }

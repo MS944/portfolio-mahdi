@@ -1,67 +1,44 @@
 #last-page-image{
   background-image: linear-gradient(-225deg, rgba(165, 168, 0, 0.13) 0%, rgba(0, 0, 0, 0.445) 50%), url("./image/25.JPG");
 }
-#content-last-page h2 {
+#last-page{height:100vh}
+.content-last-page{
+  width: 60%;
+}
+.content-last-page h3 {
   color:white;
-}
-#content-last-page h3 {
-  color:white;
-}
-#content-last-page p {
-  color:rgba(255, 255, 255, 0.705)
-}
-.phone, .email{
-  white-space: pre;
-  /* margin:30px; */
-  font-family: sans-serif;
-  padding: 5px;
-
-}
-.symble1{
-  color: yellow;
-  font-size:20px; 
-}
-#content-last-page{
-  background: black;
-  display: flex;
-  flex-direction: column;
+  padding:40px 20px 20px 20px;
   
 }
 
-.contact{
+.content-last-page p {
+  color:rgba(255, 255, 255, 0.705);
+  
+}
+
+.white-top{
+  height:25%;
+}
+footer{
+  height:75%;
+  
+  background:black;
+  
+}
+
+.info{
+  display:flex;
+  flex-wrap: wrap;
+}
+.left-info-container{
   display:flex;
   flex-direction: column;
-  justify-content: flex-start;
-  /* align-items: center */
-}
-.contact-text{
-  display:flex;
-  justify-content: flex-start;
-  /* align-items: center;  */
-}
-.container-for-bottom-border{
-  justify-content: flex-start;
-  /* align-items: center ; */
-  border-bottom:3px solid yellow;
-}
-.detail-contact{
-  align-items: baseline; 
-  justify-content: flex-start;
-}
-.find-me{
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-
-}
-.find-me-text{
-  display:flex;
-  justify-content: center;
 }
 .links-of-mine-container{
   display:flex;
-  flex-direction: row;
-  justify-content:center;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  margin:0 0 0 0;
 }
 #link{
   width: 50px;
@@ -77,25 +54,35 @@
   color:black;
   font-size:30px; 
 }
-.massage{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start
+
+.phone{
+  
+  font-family: sans-serif;
+  padding: 5px 5px 2px 5px;
+
 }
-.text{
-  width: 50%;
+.email{
+  font-family: sans-serif;
+  padding: 2px 5px 5px 5px;
 }
-.for-bottom-border{
-  width: 30%;
-  border-bottom: 2px solid yellow;
+.symble1{
+  color: yellow;
+  font-size:20px;
+  padding:10px 10px 10px 20px ; 
 }
+
+
+.massage-area{
+  width:50%;
+}
+
 .form{
-  width: 50%;
-  align-content: center;
+  padding:0 0 0 70px; 
 }
+
 input[type=text],[type=email] {
   width: 60%;
-  padding: 12px 20px;
+  padding: 8px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
@@ -114,16 +101,26 @@ input[type=submit] {
   cursor: pointer;
   display:inline-block
 }
-#massage{
-  margin: 8px 0;
-}
 
 input[type=submit]:hover {
   background-color: #45a049;
 }
 
-/* div {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-} */
+
+.container{
+  margin:0 50px;}
+.yellow-box{
+  width: 35px;
+  height: 70px;
+  float: right;
+  font-size: 24px;
+  line-height: 70px;
+  background: yellow;
+  padding:0 0 0 20px;
+}
+.symble3{
+  display:inline-block;
+  transform: translate(0,0);
+  color:black;
+  font-size: inherit;
+}

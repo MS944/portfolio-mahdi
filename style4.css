@@ -3,6 +3,7 @@
 @import 'nav-bar.css';
 @import 'home-page.css';
 @import 'page2.css';
+@import 'page3.css';
 @import 'last-page.css';
 
 
@@ -12,26 +13,12 @@
   font-family: 'Raleway', sans-serif;
 }
 
-
-
-
-
-
-
-
-
-
 .page {
-  height: 100vh;
-  /* display:grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 40% 60%; */
-  
   display: flex;
-  flex-direction: row
 }
 .image-container{
   width:40%;
+  height:inherit;
   margin:0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,18 +26,6 @@
   align-items: flex-end;
   justify-content: center;
 }
-
-
-/* phone:before {
-  content: "";
-  display: block;
-  background: url(<i class="fas fa-phone"></i>) no-repeat;
-  width: 20px;
-  height: 20px;
-  float: left;
-  margin: 0 6px 0 0;
-} */
-
 
 
 .borderline-container{
@@ -62,6 +37,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  padding:0 0 0 20px;
 }
 .left-panel-text{
   margin: 30px;
@@ -71,17 +47,39 @@ h1 {
   font-weight: 700;
   font-size: 4rem;
   color: white;
-  padding: 20px;
+  padding: 20px 20px 20px 0;
   
 } 
-.content{
+.right-container{
   width: 60%;
+  float:left;
+  position:relative;
+  padding:100px 0 100px 0;
+  border-bottom: 1px solid gray;
+  z-index: -1;
 }
-
+.content{
+  float:left;
+  margin:0 50px;
+  height:100%;
+  z-index: 2;
+}
+@media screen and (max-width: 1050px) {
+  .white-top{height:10%}
+  footer{height:90%}
+}
 
 @media screen and (max-width: 800px) {
   div.nav-bar { display: none}
   header {width: 100%}
+  .content-last-page{width:100%;}
+  footer {width:100%; height:100%;}
+  .white-top{display:none}
+  .content-last-page h3{padding:25px 0 5px 20px}
+  .massage-area{width:100%;}
+  form{padding: 10px 0 0 50px}
+  .left-panel-text h1{font-size: 3rem;}
+  .info{padding-top: 30%}
   }
 
 @media screen and (max-width: 592px) {
@@ -89,14 +87,27 @@ h1 {
     font-weight: 500;
     font-size: 3rem;
   }
+  
   .image-container {
     display: none;
   }
+  .right-container{
+    width: 100%;}
 
-  
-
-
-
-
-
+  .find-me{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+  }
+  .links-of-mine-container{
+  justify-content: flex-start;
+  padding:0 0 0 10px
+  }
+  .info{padding-top: 0}
+}
+@media screen and (max-width: 390px) {
+  .container{margin:0;}
+  .content-last-page h3{padding:20px 0 5px 20px;}
+  .symble1{padding:5px 10px 5px 20px}
+  .info{padding-top: 0}
 }
