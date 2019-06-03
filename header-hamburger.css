@@ -13,7 +13,10 @@ header{
   max-width: 200px;
   height: 70px;
   position: relative;
-  padding: 0 30px;
+  padding: 12px 30px;
+ }
+ .logo-holder img{
+   width: 150px;
  }
 
 .hamberger-icon{

@@ -1,5 +1,5 @@
 #page3-image{
-  background-image: linear-gradient(-225deg, rgba(165, 168, 0, 0.13) 0%, rgba(0, 0, 0, 0.445) 50%), url("./image/18.JPG");
+  background-image: linear-gradient(-225deg, rgba(165, 168, 0, 0.13) 0%, rgba(0, 0, 0, 0.445) 50%), url("./image/18.jpg");
 }
 #page3{height:100vh}
 
@@ -61,56 +61,18 @@
 }
 .back-ground{
   
-  float:left;
-  position:relative;
+  /* float:left; */
+  /* position:relative; */
   display:flex;
   flex-wrap:wrap;
   width:100%;
-  justify-content: flex-start;
+  justify-content: center;
   height: 50%;
+  padding-top: 15%;
 
 }
-.education{
-  padding:8px;
- 
+.back-ground img {
+  width: 70px;
+  height: 70px;
+  margin: 0 10px;
 }
-.experience{align-self: center;
-  padding:8px;
-}
-.skills{align-self: flex-end;
-  padding:8px;
-}
-
-#page3 ul{
-  list-style-type: disc;
-  font-size: 20px;
-  line-height: 35px;
-  padding-bottom: 10px;
-  font-family: 'Lato', sans-serif;
-  list-style-position: inside;
-}
-#page3 li {
-  padding:8px 0px 5px 10px;
-  font-size: 18px;
-  line-height: 30px;
-  padding-bottom: 8px;
-  font-family: 'Lato', sans-serif;
-}
-
-ul.skl {
-  list-style: none;
-}
-
-li.ruby {
-  background: url("./image/ruby.png") no-repeat 0 50%;
-  background-size: 20px;
-}
-li.html {
-  background: url("./image/html.png") no-repeat 0 50%;
-  background-size: 30px;
-}
-li.css {
-  background: url("./image/css.png") no-repeat 0 50%;
-  background-size: 30px;
-}
-
