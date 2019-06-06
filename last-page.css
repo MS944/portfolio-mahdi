@@ -83,7 +83,7 @@ footer{
   padding:0 0 0 70px; 
 }
 
-input[type=text],[type=email] {
+input[type=text], input[type=email] {
   width: 60%;
   padding: 8px 20px;
   margin: 8px 0;
@@ -92,13 +92,13 @@ input[type=text],[type=email] {
   border-radius: 4px;
   box-sizing: border-box;
 }
-
+input[type=email] {margin-left: 13px}
 input[type=submit] {
   width: 60%;
   background-color: yellow;
   color: black;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 8px 0 8px 13px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -109,7 +109,7 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-
+#massage{margin-left: 13px}
 .container{
   margin:0 50px;}
 .yellow-box{

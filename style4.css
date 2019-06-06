@@ -70,6 +70,7 @@ h1 {
 }
 
 @media screen and (max-width: 800px) {
+  .hamberger-icon{ display: inline-block}
   div.nav-bar { display: none}
   header {width: 100%}
   .content-last-page{width:100%;}
@@ -87,7 +88,9 @@ h1 {
     font-weight: 500;
     font-size: 3rem;
   }
-  
+  .start{
+  font-size: 2rem
+  }
   .image-container {
     display: none;
   }
