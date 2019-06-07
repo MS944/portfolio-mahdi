@@ -71,6 +71,7 @@ h1 {
 }
 
 @media screen and (max-width: 800px) {
+  .hamberger-icon{display: inline-block}
   div.nav-bar {
     display: none;
   }
@@ -126,7 +127,9 @@ h1 {
     font-weight: 500;
     font-size: 3rem;
   }
-
+  .start{
+  font-size: 2rem
+  }
   .image-container {
     display: none;
   }
