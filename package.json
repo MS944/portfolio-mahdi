@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-mahdi1",
+  "version": "1.0.0",
+  "description": "doc for portfolio project of Mahdi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MS944/portfolio-mahdi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MS944/portfolio-mahdi/issues"
+  },
+  "homepage": "https://github.com/MS944/portfolio-mahdi#readme",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  }
+}

@@ -77,10 +77,19 @@ footer{
 
 .massage-area{
   width:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.form{
-  padding:0 0 0 70px; 
+.form{width: 100%;}
+form{
+  /* padding:0 0 0 70px;  */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 input[type=text],[type=email] {
@@ -110,16 +119,20 @@ input[type=submit]:hover {
 }
 
 
-.container{
-  margin:0 50px;}
+.container3{
+  width:100%;
+  display:flex;
+  justify-content: flex-end
+}
 .yellow-box{
-  width: 35px;
+  width: 50px;
   height: 70px;
-  float: right;
+  /* float: right; */
   font-size: 24px;
   line-height: 70px;
   background: yellow;
-  padding:0 0 0 20px;
+ text-align: center;
+ margin-right: 10px;
 }
 .symble3{
   display:inline-block;
